@@ -6,7 +6,7 @@ Proyek ini merupakan implementasi sistem klasifikasi citra tumor otak menggunaka
 
 Untuk meningkatkan performa komputasi, proses ekstraksi fitur dan klasifikasi dijalankan secara paralel menggunakan **Joblib Parallel Processing**.
 
-Proyek ini dikembangkan sebagai tugas akhir mata kuliah **Komputasi dan Kecerdasan Data Artificial (KDKA)**.
+Proyek ini dikembangkan sebagai tugas akhir mata kuliah **Konsep Dasar Kecerdasan Artificial**.
 
 ---
 
@@ -74,13 +74,13 @@ Tahapan:
 5. Menghitung bobot menggunakan persamaan:
 
 [
-w(x)=\frac{1}{x+\varepsilon}
+w(x)=1/(x + e)
 ]
 
 dengan:
 
 [
-\varepsilon = 10^{-6}
+e = 1.10^-6
 ]
 
 6. Menjumlahkan bobot untuk setiap kelas
@@ -204,12 +204,18 @@ Buka file notebook proyek dan jalankan seluruh sel secara berurutan.
 ```text
 project/
 │
-├── dataset/
+├── docs/
+│   └── Deteksi Tumor Otak dengan Segmentasi K-Means dan Klasifikasi Menggunakan Algoritma K-Nearest Neighbor yang dimodifikasi.pdf
 │
 ├── notebook/
-│   └── Projek_UAS_KDKA.ipynb
+│   └── notebook.ipynb
 │
-├── results/
+├── image/
+│   └── kmeans_pipeline.png
+│   └── knn_pipeline.png
+│   └── overall_pipeline.png
+│   └── preprocess_pipeline.png
+│   └── training_pipeline.png
 │
 ├── README.md
 │
